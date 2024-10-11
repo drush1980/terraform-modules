@@ -69,7 +69,7 @@ module "apigee-x-core" {
   source     = "../../modules/apigee-x-core"
   project_id = module.project.project_id
   ax_region  = var.ax_region
-  # billing_type        = "PAYG" # Mandatory for PAYG. Billing type of the Apigee Organization. Keep this as "PAYG" for Pay-As-You-Go Apigee Organization.
+  billing_type        = "PAYG" # Mandatory for PAYG. Billing type of the Apigee Organization. Keep this as "PAYG" for Pay-As-You-Go Apigee Organization.
   apigee_environments = var.apigee_environments
   apigee_envgroups = {
     for name, env_group in var.apigee_envgroups : name => {

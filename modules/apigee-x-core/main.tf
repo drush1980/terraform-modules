@@ -56,7 +56,7 @@ module "kms-inst-disk" {
   }
   keyring = {
     location = coalesce(each.value.keyring_location, each.value.region)
-    name     = coalesce(each.value.keyring_name, "apigee-${each.key}")
+    name     = coalesce(each.value.keyring_name, "apigeex-natt-${each.key}")
   }
   keyring_create = each.value.keyring_create
   keys = {

@@ -97,7 +97,7 @@ variable "org_key_rotation_period" {
 variable "org_kms_keyring_name" {
   description = "Name of the KMS Key Ring for Apigee Organization DB."
   type        = string
-  default     = "apigee-x-org"
+  default     = "apigee-x-natt"
 }
 
 variable "org_kms_keyring_location" {
